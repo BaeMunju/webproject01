@@ -1,0 +1,74 @@
+html {
+    scroll-behavior:smooth;
+}
+
+.HT {
+  width:980px;
+  margin:0 auto;
+  margin-top:54px;
+  font-family: Arial;
+}
+
+.tablink {
+  color:#272727;
+  background-color:rgba(0,0,0,0);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom:13px;
+  font-size: 20px; font-weight:bold;
+  font-family:"Noto Sans KR";
+}
+
+.tablink li {
+    position:relative;
+    margin-right:40px;
+    padding-bottom:2px;
+}
+
+.tablink .LHT {
+    margin-right:100px;
+}
+
+.tablink .FHT {
+    margin-left:110px;
+}
+
+.tablink li::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color:#272727;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.tablink li:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.tabcontent {
+  color:#272727;
+  display: none;
+  height: 100%;
+  text-align:center;
+}
+
+.tabcontent h3 {
+    font-size:18px; font-family:"Noto Sans KR";
+    padding-top:50px;
+}
+
+.tabcontent img {
+    padding:20px 0;
+}
+
+.tabcontent p {
+    text-align:justify; line-height:2.1;
+}

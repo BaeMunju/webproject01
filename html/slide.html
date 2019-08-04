@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>lightSlider Demo</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <link rel="stylesheet"  href="../css/slider.css"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/lightslider.js"></script> 
+    <script>
+    	 $(document).ready(function() {
+			$("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+		});
+    </script>
+</head>
+<body>
+	<div class="demo">
+        <div class="item">
+            <ul id="content-slider" class="content-slider">
+                <li class="bora">
+                    <h3>
+                        <p class="headT05">보라매공원</p>
+                        <p class="copyT05">옛 공군사관학교 자리에 마련된<br>보라매공원은 시민위락공</p>
+                        <img src="../images/Gline_W_B_S.png">
+                        <a class="bodyT05" href="">자세히 들여다보기</a>
+                    
+                    </h3>
+                </li>
+                <li class="dolim">
+                    <h3>
+                        <p class="headT05">도림천</p>
+                        <p class="copyT05">옛 공군사관학교 자리에 마련된<br>보라매공원은 시민위락공원</p>
+                        <img src="../images/Gline_W_B_S.png">
+                        <a class="bodyT02" href="">자세히 들여다보기</a> 
+                    
+                    </h3>
+                </li>
+                <li class="shasha">
+                    <h3>
+                        <p class="headT05">샤로수길</p>
+                        <p class="copyT05">옛 공군사관학교 자리에 마련된<br>보라매공원은 시민위락공</p>
+                        <img src="../images/Gline_W_B_S.png">
+                        <a class="bodyT05" href="">자세히 들여다보기</a>
+                    
+                    </h3>
+                </li>
+                <li class="seoul">
+                    <h3>
+                        <p class="headT05">서울대학교</p>
+                        <p class="copyT05">옛 공군사관학교 자리에 마련된<br>보라매공원은 시민위락공</p>
+                        <img src="../images/Gline_W_B_S.png">
+                        <a class="bodyT05" href="">자세히 들여다보기</a>
+                    
+                    </h3>
+                </li>
+                <li class="goro">
+                    <h3>
+                        <p class="headT05">녹두거리</p>
+                        <p class="copyT05">옛 공군사관학교 자리에 마련된<br>보라매공원은 시민위락공</p>
+                        <img src="../images/Gline_W_B_S.png">
+                        <a class="bodyT05" href="">자세히 들여다보기</a>
+                    
+                    </h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="loadingbar"></div>
+    <style type="text/css">
+        .loagingbar {
+            position:fixed; left:50%; top:50%;
+            width:100px; height:100px; box-sizing:border-box; margin:-50px 0 0 -50px; border:10px solid #ced6e0;
+            border-top-color:pink;
+            border-radius:60%;
+            animation:loader 1s 0s infifite linear;
+        }
+        
+        @keyframes loader {
+            0% {
+                transform:rotate(0deg);
+            }
+            100% {
+                transform:rotate(360deg)
+            }
+        }
+    </style>	
+</body>

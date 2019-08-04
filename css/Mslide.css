@@ -1,0 +1,100 @@
+#slider {
+  width:1730px; height:1080px; background-color:pink;
+  position: relative; top:102px;
+  overflow: hidden;
+  margin:0 auto;
+}
+
+#slider img {
+    width:70%;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width:1730px;    
+  height:1920px;
+  list-style: none;
+  color:white;
+}
+
+#slider ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 1732px;
+  height: 900px;
+  background: #ccc;
+  line-height:1.6
+}
+
+#slider ul .S1 {
+    background-image:url(../images/video/%EB%8F%84%EB%A6%BC%EC%B2%9C.gif);
+}
+
+#slider ul .S2 {
+    background-image:url(../images/video/%EC%83%A4%EB%A1%9C%EC%88%98%EA%B8%B8.gif);
+}
+
+#slider ul .S3 {
+    background-image:url(../images/video/%EB%B3%B4%EB%9D%BC%EB%A7%A4%EA%B3%B5%EC%9B%90.gif);
+}
+
+#slider ul .S4 {
+    background-image:url(../images/video/%EC%84%9C%EC%9A%B8%EB%8C%80%ED%95%99%EA%B5%90.gif);
+}
+
+#slider ul .S5 {
+    background-image:url(../images/video/%EA%B3%A0%EB%A1%9C%EC%88%98%EA%B8%B8.gif);
+}
+
+#slider ul li p {
+    padding:330px 0 0 275px; box-sizing:border-box;
+    font-size:18px; font-family:"Noto Sans KR";
+    font-weight:200; 
+}
+
+#slider ul li p span {
+    font-size:100px; font-family:"Noto Serif KR";
+    font-weight:bold;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 43%;
+  z-index: 999;
+  display: block;
+  padding: 50px 20px;
+  width: auto;
+  height: auto;
+  background:white;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius:0 90px 90px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius:90px 0 0 90px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
